@@ -10,10 +10,10 @@ function compute()
     // Output string
     var outstr = "If you deposit " + "<mark>" + principal + "</mark>," + "<br/>" +
                  "at an interest rate of " + "<mark>" + rate + "</mark>." + "<br/>" + 
-                 "You will receive an amount of "  + "<mark>"+ interest + "</mark>," + "<br/>" +
-                 "in the year "  + "<mark>" + year + years + "</mark>.";
-    if (isNaN(principal) == false){
-        //alert("Enter a positive number " + outstr);
+                 "You will receive an amount of "  + "<mark>"+ principal + interest + "</mark>," + "<br/>" +
+                 "in the year "  + "<mark>" + year + "</mark>.";
+    if (isNaN(principal) == true){
+        //alert("Enter a positive number");
         alert(outstr);
         document.getElementById("principal").focus();
     } else {
