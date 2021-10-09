@@ -13,7 +13,7 @@ function compute()
                  "You will receive an amount of "  + "<mark>"+ interest + "</mark>," + "<br/>" +
                  "in the year "  + "<mark>" + year + years + "</mark>.";
     if (isNaN(principal) == false){
-        alert("Enter a positive number " + principal);
+        alert("Enter a positive number " + outstr);
         document.getElementById("principal").focus();
     } else {
         document.getElementById("result").innerHTML = outstr;
