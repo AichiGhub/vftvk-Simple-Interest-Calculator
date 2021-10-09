@@ -14,9 +14,9 @@ function compute()
                  "at an interest rate of " + "<mark>" + rate + "</mark>." + "<br/>" + 
                  "You will receive an amount of "  + "<mark>"+ amount + "</mark>," + "<br/>" +
                  "in the year "  + "<mark>" + year + "</mark>.";
-    if (Number.isNaN(principal)){
-        //alert("Enter a positive number");
-        alert(outstr);
+    if (isNaN(principal)){
+        alert("Enter a positive number");
+        //alert(outstr);
         document.getElementById("principal").focus();
     } else {
         document.getElementById("result").innerHTML = outstr;
