@@ -5,14 +5,16 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = principal * years * rate /100;
-    var year = new Date().getFullYear()+parseInt(years);
+    //var year = new Date().getFullYear()+parseInt(years);
+    var year = new Date().getFullYear();
+
 
     // Output string
     var outstr = "If you deposit " + "<mark>" + principal + "</mark>," + "<br/>" +
                  "at an interest rate of " + "<mark>" + rate + "</mark>." + "<br/>" + 
                  "You will receive an amount of "  + "<mark>"+ principal + interest + "</mark>," + "<br/>" +
                  "in the year "  + "<mark>" + year + "</mark>.";
-    if (isNaN(principal) == true){
+    if (isNaN(principal)){
         //alert("Enter a positive number");
         alert(outstr);
         document.getElementById("principal").focus();
